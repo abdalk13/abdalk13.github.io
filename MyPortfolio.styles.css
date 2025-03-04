@@ -92,8 +92,8 @@ main[b-agupx8yfi6] {
 .logo[b-ttxvcnl5y1], h1[b-ttxvcnl5y1] {
     font-family: 'Titillium Web',serif;
     font-size: 25px;
-    /* color: #47be52ff;*/
-    color: white;
+     color: #47be52ff;
+    /*color: white;*/
     margin-left: 40px;
     padding-top: 40px;
     min-height: 130px; 
@@ -115,7 +115,8 @@ main[b-agupx8yfi6] {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: white;
+    color: #47be52ff;
+    /*color: white;*/
     cursor: pointer;
 }
 
@@ -146,20 +147,106 @@ main[b-agupx8yfi6] {
     align-items: center;
 }
 
-.image-list li img[b-a97g3msoiy] {
-    width: 30px;
+    .image-list li img[b-a97g3msoiy] {
+        width: 30px;
+        height: auto;
+    }
+
+    .image-list li:hover[b-a97g3msoiy] {
+        transform: scale(1.2);
+    }
+
+.contact-info[b-a97g3msoiy] {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #47be52ff;
+}
+
+.contact-info-box[b-a97g3msoiy] {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 0px !important;
+}
+ .contact-info-box p[b-a97g3msoiy] {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+ }
+/* /Pages/Home.razor.rz.scp.css */
+.about-me[b-9bcrfm5ed5] {
+
+    width: 50%; 
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border-radius: 10px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    text-align: center; 
+}
+
+
+.about-me p[b-9bcrfm5ed5]{
     height: auto;
+    font-size: 16px;
+    color: white;
+    /*color: #47be52ff;*/
 }
 /* /Pages/Projects.razor.rz.scp.css */
 .projects-languages[b-mb3yw0x645] {
     list-style: none;
     display: flex;
-    gap: 100px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
 }
-    .projects-languages li h1[b-mb3yw0x645] {
-        height: auto;
-        font-size: 25px;
-        color:white;
+
+    .projects-languages li[b-mb3yw0x645] {
+        position: relative;
+        padding: 0; 
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
+        .projects-languages li a[b-mb3yw0x645] {
+            color: white;
+            display: block;
+            padding: 10px 20px; 
+            text-decoration: none; 
+            width: 100%;
+            height: 100%;
+        }
+
+.dropdown[b-mb3yw0x645] {
+    display: none;
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 5px;
+    list-style: none;
+    bottom: 100%; 
+    left: 0;
+    min-width: 200px;
+}
+
+.projects-languages li:hover[b-mb3yw0x645] {
+    background-color: #47be52ff;
+    color: white;
+}
+
+    .projects-languages li:hover .dropdown[b-mb3yw0x645] {
+        display: block;
     }

@@ -1,6 +1,6 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('/background1.png');
+    background-image: url('/background2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,8 @@ h1:focus {
 }
 
 a, .btn-link {
-    color: white;
+    /*color: white;*/
+    color: #47be52ff;
     margin-right: 40px;
     font-size: 17px;
     text-decoration: none;
